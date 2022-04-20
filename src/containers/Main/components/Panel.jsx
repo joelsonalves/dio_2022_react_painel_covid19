@@ -17,12 +17,15 @@ function Panel({ updateAt, onChange, data, country, getCoviddata }) {
     </MenuItem>
   );
 
-  const textCovid19 = `País: ${country} 
+  const textCovid19 = `PAINEL COVID-19
+                      \n
+                      \nPaís: ${country} 
                       \ntotal de casos: ${cases}
                       \nóbitos hoje: ${todayDeaths}
                       \nCasos hoje: ${todayCases}
                       \nTotal de Mortos: ${deaths}
-                      \nrecuperados: ${recovered}`;
+                      \nrecuperados: ${recovered}
+                      \n`;
 
   const copyInfo = () => {
     navigator.clipboard.writeText(textCovid19)
@@ -56,7 +59,7 @@ function Panel({ updateAt, onChange, data, country, getCoviddata }) {
     <Card>
       <CardPanelContentStyled>
         <div>
-          <Typography variant="h4" component="div" color="#1976d2" fontWeight="bold">PAINEL COVID19</Typography>
+          <Typography variant="h4" component="div" color="#1976d2" fontWeight="bold">PAINEL COVID-19</Typography>
           <Typography variant="body" component="div">Atualizado em: {updateAt}</Typography>
           <div className="pt-2">
             <Select onChange={onChange} value={country}>
