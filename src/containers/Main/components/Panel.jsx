@@ -17,13 +17,15 @@ function Panel({ updateAt, onChange, data, country, getCoviddata }) {
     </MenuItem>
   );
 
+  const getValue = (value) => value >= 0 ? (value).toLocaleString('pt-BR') : 'sem retorno';
+
   const textCovid19 = `PAINEL COVID-19\n
 País: ${country}\n
-Total de casos: ${cases.toLocaleString()}\n
-Óbitos hoje: ${todayDeaths.toLocaleString()}\n
-Casos hoje: ${todayCases.toLocaleString()}\n
-Total de Mortos: ${deaths.toLocaleString()}\n
-Recuperados: ${recovered.toLocaleString()}\n
+Total de casos: ${getValue(cases)}\n
+Óbitos hoje: ${getValue(todayDeaths)}\n
+Casos hoje: ${getValue(todayCases)}\n
+Total de Mortos: ${getValue(deaths)}\n
+Recuperados: ${getValue(recovered)}\n
 Atualizado em: ${updateAt}\n\n`;
 
   const copyInfo = () => {
