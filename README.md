@@ -4,7 +4,7 @@ https://painel-covid19.netlify.app
 
 https://app.netlify.com/sites/painel-covid19/
 
-Nota: no Netlify, configurar o deploy como **CI=false npm run build**.
+Nota: no Netlify, configurar o deploy como "CI=false npm run build".
 
 # Getting Started with Create React App
 

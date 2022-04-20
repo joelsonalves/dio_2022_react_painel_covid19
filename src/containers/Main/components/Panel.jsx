@@ -17,7 +17,12 @@ function Panel({ updateAt, onChange, data, country, getCoviddata }) {
     </MenuItem>
   );
 
-  const textCovid19 = `País: ${country} - recuperados: ${recovered}`;
+  const textCovid19 = `País: ${country} 
+                      \ntotal de casos: ${cases}
+                      \nóbitos hoje: ${todayDeaths}
+                      \nCasos hoje: ${todayCases}
+                      \nTotal de Mortos: ${deaths}
+                      \nrecuperados: ${recovered}`;
 
   const copyInfo = () => {
     navigator.clipboard.writeText(textCovid19)
@@ -27,7 +32,7 @@ function Panel({ updateAt, onChange, data, country, getCoviddata }) {
     navigator.share({
       title: `Dados do Covid19 - ${country}`,
       text: textCovid19,
-      url: 'https://covid19dio.netlify.app/'
+      url: 'https://painel-covid19.netlify.app'
     })
   }
 
