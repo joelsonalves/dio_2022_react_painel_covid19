@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer>
       <FooterStyled>
-        <Typography variant="p" component="div" color="#1976d2" fontWeight="bold">Projeto DIO utilizando React JS. Desenvolvido por Joelson Alves.</Typography>
+        <Typography variant="p" component="div" color="#1976d2" fontWeight="bold">Projeto DIO React JS. Desenvolvido por Joelson Alves.</Typography>
       </FooterStyled>
     </footer>
   );
