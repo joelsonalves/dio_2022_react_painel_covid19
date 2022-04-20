@@ -18,13 +18,13 @@ function Panel({ updateAt, onChange, data, country, getCoviddata }) {
   );
 
   const textCovid19 = `PAINEL COVID-19\n
-                      País: ${country} 
-                      total de casos: ${cases}
-                      óbitos hoje: ${todayDeaths}
-                      Casos hoje: ${todayCases}
-                      Total de Mortos: ${deaths}
-                      recuperados: ${recovered}\n
-                      Atualizado em: ${updateAt}\n`;
+País: ${country}
+total de casos: ${cases}
+óbitos hoje: ${todayDeaths}
+Casos hoje: ${todayCases}
+Total de Mortos: ${deaths}
+recuperados: ${recovered}\n
+Atualizado em: ${updateAt}\n\n`;
 
   const copyInfo = () => {
     navigator.clipboard.writeText(textCovid19)
