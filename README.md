@@ -4,6 +4,8 @@ https://painel-covid19.netlify.app
 
 https://app.netlify.com/sites/painel-covid19/
 
+Nota: no Netlify, configurar o deploy como **CI=false npm run build**.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
