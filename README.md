@@ -1,5 +1,10 @@
 # PAINEL COVID19 - Projeto da DIO
+
 https://painel-covid19.netlify.app
+
+https://app.netlify.com/sites/painel-covid19/
+
+
 
 # Getting Started with Create React App
 
