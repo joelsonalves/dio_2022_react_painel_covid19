@@ -27,3 +27,12 @@ export const ItemStyled = styled.div`
   justify-content: space-between;
   min-width: 150px;
 `;
+
+export const FooterStyled = styled(CardContent)`
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  background-color: white;
+  margin-top: 36px;
+  border-radius: 5px 5px;
+`;

@@ -2,6 +2,7 @@ import React, { memo, useState, useCallback, useEffect } from "react";
 import Api from '../../api';
 import Board from './components/Board';
 import Panel from './components/Panel';
+import Footer from './components/Footer';
 import { ContainerStyled } from './style';
 
 function Main() {
@@ -36,6 +37,7 @@ function Main() {
                 />
             </div>
             <Board data={data} />
+            <Footer />
         </ContainerStyled>
     )
 }
