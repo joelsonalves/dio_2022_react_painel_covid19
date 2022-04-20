@@ -18,12 +18,12 @@ function Panel({ updateAt, onChange, data, country, getCoviddata }) {
   );
 
   const textCovid19 = `PAINEL COVID-19\n
-País: ${country}
-total de casos: ${cases}
-óbitos hoje: ${todayDeaths}
-Casos hoje: ${todayCases}
-Total de Mortos: ${deaths}
-recuperados: ${recovered}\n
+País: ${country}\n
+Total de casos: ${cases.toLocaleString()}\n
+Óbitos hoje: ${todayDeaths.toLocaleString()}\n
+Casos hoje: ${todayCases.toLocaleString()}\n
+Total de Mortos: ${deaths.toLocaleString()}\n
+Recuperados: ${recovered.toLocaleString()}\n
 Atualizado em: ${updateAt}\n\n`;
 
   const copyInfo = () => {
