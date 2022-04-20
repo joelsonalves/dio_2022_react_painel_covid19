@@ -59,7 +59,9 @@ function Panel({ updateAt, onChange, data, country, getCoviddata }) {
             </Select>
           </div>
         </div>
-        {navigatorHasShare ? renderShareButton : renderCopyButton}
+        <div>
+          {navigatorHasShare ? renderShareButton : renderCopyButton}
+        </div>
       </CardPanelContentStyled>
     </Card>
   );
