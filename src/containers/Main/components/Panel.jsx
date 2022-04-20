@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import { Card, Typography, Button, Select, MenuItem } from '../../../components';
+import { Card, Typography, Button, Select, MenuItem, ContentCopyIcon, ShareIcon } from '../../../components';
 import COUNTRIES from '../../../commons/constants/countries';
 import { CardPanelContentStyled, ItemStyled } from './style';
 
@@ -33,16 +33,16 @@ function Panel({ updateAt, onChange, data, country, getCoviddata }) {
 
   const renderShareButton = (
     <div>
-      <Button variant="contained" color="primary" onClick={shareInfo}>
-        Compartilhar
+      <Button variant="contained" color="primary" title="Compartilhar" onClick={shareInfo}>
+        <ShareIcon />
       </Button>
     </div>
   );
 
   const renderCopyButton = (
     <div>
-      <Button variant="contained" color="primary" onClick={copyInfo}>
-        Copiar
+      <Button variant="contained" color="primary" title="Copiar" onClick={copyInfo}>
+        <ContentCopyIcon />
       </Button>
     </div>
   );

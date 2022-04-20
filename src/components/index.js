@@ -5,6 +5,8 @@ import Typography from './Typography';
 import Skeleton from './Skeleton';
 import Select from './Select';
 import MenuItem from './MenuItem';
+import ContentCopyIcon from './ContentCopyIcon';
+import ShareIcon from './ShareIcon';
 
 export {
     Button,
@@ -14,5 +16,7 @@ export {
     Typography,
     Skeleton,
     Select,
-    MenuItem
+    MenuItem,
+    ContentCopyIcon,
+    ShareIcon
 };
