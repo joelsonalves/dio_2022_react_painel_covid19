@@ -1,11 +1,11 @@
 import React, { memo } from 'react';
-import { Card, Typography, Button, Select, MenuItem, ContentCopyIcon, ShareIcon } from '../../../components';
+import { Card, Typography, Select, MenuItem, ContentCopyIcon, ShareIcon, AutorenewIcon, IconButton } from '../../../components';
 import COUNTRIES from '../../../commons/constants/countries';
 import { CardPanelContentStyled, ItemStyled } from './style';
 
 const navigatorHasShare = navigator.share;
 
-function Panel({ updateAt, onChange, data, country, getCoviddata }) {
+function Panel({ updateAt, onChange, data, country, getCoviddata, onClick }) {
   const { cases, recovered, deaths, todayCases, todayDeaths } = data;
  
   const renderCountries = (country, index) => (
@@ -42,17 +42,17 @@ Atualizado em: ${updateAt}\n\n`;
 
   const renderShareButton = (
     <div>
-      <Button variant="contained" color="primary" title="Compartilhar" onClick={shareInfo}>
+      <IconButton variant="contained" color="primary" title="Compartilhar" onClick={shareInfo}>
         <ShareIcon />
-      </Button>
+      </IconButton>
     </div>
   );
 
   const renderCopyButton = (
     <div>
-      <Button variant="contained" color="primary" title="Copiar" onClick={copyInfo}>
+      <IconButton variant="contained" color="primary" title="Copiar" onClick={copyInfo}>
         <ContentCopyIcon />
-      </Button>
+      </IconButton>
     </div>
   );
 
@@ -63,9 +63,12 @@ Atualizado em: ${updateAt}\n\n`;
           <Typography variant="h4" component="div" color="#1976d2" fontWeight="bold">PAINEL COVID-19</Typography>
           <Typography variant="body" component="div">Atualizado em: {updateAt}</Typography>
           <div className="pt-2">
-            <Select onChange={onChange} value={country}>
+            <Select className="mr-2" onChange={onChange} value={country}>
               {COUNTRIES.map(renderCountries)}
             </Select>
+            <IconButton variant="contained" color="primary" title="Atualizar" onClick={onClick}>
+              <AutorenewIcon />
+            </IconButton>
           </div>
         </div>
         <div>

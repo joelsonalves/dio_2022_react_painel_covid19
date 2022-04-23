@@ -28,11 +28,15 @@ const globalStyle = createGlobalStyle`
   }
 
   .mb-2 {
-    margin-bottom: 36px;
+    margin-bottom: 2rem;
+  }
+
+  .mr-2 {
+    margin-right: 1rem;
   }
 
   .pt-2 {
-    padding-top: 16px;
+    padding-top: 1rem;
   }
 
   .cursor {

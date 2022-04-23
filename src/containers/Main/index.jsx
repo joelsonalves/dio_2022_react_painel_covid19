@@ -25,6 +25,11 @@ function Main() {
         setCountry(country);
     }
 
+    function refreshPage(){ 
+        setData({});
+        getCovidData(country);
+    }
+
     return (
         <ContainerStyled>
             <div className="mb-2">
@@ -34,6 +39,7 @@ function Main() {
                     onChange={handleChange}
                     country={country}
                     getCovidData={getCovidData}
+                    onClick={refreshPage}
                 />
             </div>
             <Board data={data} />

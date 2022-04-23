@@ -7,6 +7,8 @@ import Select from './Select';
 import MenuItem from './MenuItem';
 import ContentCopyIcon from './ContentCopyIcon';
 import ShareIcon from './ShareIcon';
+import AutorenewIcon from './AutorenewIcon';
+import IconButton from './IconButton';
 
 export {
     Button,
@@ -18,5 +20,7 @@ export {
     Select,
     MenuItem,
     ContentCopyIcon,
-    ShareIcon
+    ShareIcon,
+    AutorenewIcon,
+    IconButton
 };

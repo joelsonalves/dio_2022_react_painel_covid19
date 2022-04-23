@@ -19,7 +19,7 @@ export const CardContentStyled = styled(CardContent)`
 export const CardPanelContentStyled = styled(CardContent)`
   display: flex;
   justify-content: space-between;
-  padding: 25px;
+  padding: 1.5rem;
 `;
 
 export const ItemStyled = styled.div`
@@ -31,8 +31,8 @@ export const ItemStyled = styled.div`
 export const FooterStyled = styled(CardContent)`
   display: flex;
   justify-content: center;
-  padding: 25px;
+  padding: 1rem;
   background-color: white;
-  margin-top: 36px;
+  margin-top: 2rem;
   border-radius: 5px 5px;
 `;
