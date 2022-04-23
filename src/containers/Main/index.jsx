@@ -25,7 +25,7 @@ function Main() {
         setCountry(country);
     }
 
-    function refreshPage(){ 
+    const refreshPage = () => { 
         setData({});
         getCovidData(country);
     }
